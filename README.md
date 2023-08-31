@@ -34,7 +34,7 @@ npm run dev
 
 
 ## Routes
-_Clique para ver mais_
+_Clique abaixo para ver mais_
 
 <details>
 <summary><b>[POST] /juros/simples</b></summary>
@@ -63,6 +63,10 @@ ResponseBody:
 
 ```
 <br>
+Exemplo prático:
+
+![juros-simples](https://raw.githubusercontent.com/brenoww/calculo-juros-API/main/images/juros-simples.png)
+<br>
 </details> 
 
 <details>
@@ -89,6 +93,10 @@ ResponseBody:
 }
 
 ```
+<br>
+Exemplo prático:
+
+![juros-composto](https://raw.githubusercontent.com/brenoww/calculo-juros-API/main/images/juros-composto.png)
 </details>
 
 <details>
@@ -114,6 +122,10 @@ Ao acessar esta rota, a API retornará um Array contendo o histórico de cálcul
   }
 ]
 ```
+<br>
+Exemplo prático:
+
+![juros-historico](https://raw.githubusercontent.com/brenoww/calculo-juros-API/main/images/juros-historico.png)
 <br>
 </details>
 
