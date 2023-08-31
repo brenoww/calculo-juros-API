@@ -38,6 +38,7 @@ npm run dev
 - [GET] /juros/historico
 - [POST] /juros/simples
 - [POST] /juros/composto
+
 Domínio: http://localhost:3000
 
 **As rotas "POST /juros" requerem um objeto .json no seu corpo (BODY). Modelo:**
