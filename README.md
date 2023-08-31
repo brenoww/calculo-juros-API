@@ -35,7 +35,11 @@ npm run dev
 
 ## Routes
 
-- [GET] /juros/historico
+### - [GET] /juros/historico
+
+Ao acessar esta rota, a API retornará um Array contendo o histórico de cálculos feitos
+
+
 - [POST] /juros/simples
 - [POST] /juros/composto
 
