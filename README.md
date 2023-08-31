@@ -34,16 +34,92 @@ npm run dev
 
 
 ## Routes
+_Clique para ver mais_
 
-### - [GET] /juros/historico
+<details>
+<summary><b>[POST] /juros/simples</b></summary>
+<br>
 
-Ao acessar esta rota, a API retornará um Array contendo o histórico de cálculos feitos
+Ao acessar esta rota, inserindo um JSON no Body seguindo o modelo abaixo, a API retornará o resultado do cálculo para Juro Simples e armazenará no histórico este cálculo.
+
+```js
+
+Body:
+
+{
+  "valorInicial": 100,
+  "valorMensal": 0,
+  "taxa": 1,
+  "tempo": 10
+}
+
+ResponseBody:
+
+{
+  "valorAcumulado": "110.00",
+  "taxa": "1%",
+  "juros": "10.00"
+}
+
+```
+<br>
+</details> 
+
+<details>
+<summary><b>[POST] /juros/composto</b></summary>
+Ao acessar esta rota, inserindo um JSON no Body seguindo o modelo abaixo, a API retornará o resultado do cálculo para Juro Simples e armazenará no histórico este cálculo.
+
+```js
+
+Body:
+
+{
+  "valorInicial": 100,
+  "valorMensal": 0,
+  "taxa": 1,
+  "tempo": 10
+}
+
+ResponseBody:
+
+{
+  "valorAcumulado": "110.46",
+  "taxa": "1%",
+  "juros": "10.46"
+}
+
+```
+</details>
+
+<details>
+<summary><b>[GET] /juros/historico</b></summary>
+<br>
+Ao acessar esta rota, a API retornará um Array contendo o histórico de cálculos feitos:
+
+```json
+[
+  {
+    "tipo": "Juros Simples",
+    "valorInicial": "100.00",
+    "valorAcumulado": "110.00",
+    "juros": "10.00",
+    "taxa": "1%"
+  },
+  {
+    "tipo": "Juros Composto",
+    "valorInicial": "100.00",
+    "valorAcumulado": "110.46",
+    "juros": "10.46",
+    "taxa": "1%"
+  }
+]
+```
+<br>
+</details>
 
 
-- [POST] /juros/simples
-- [POST] /juros/composto
 
-Domínio: http://localhost:3000
+Domínio: ht<span>tp://</span>localhost:3000
 
 **As rotas "POST /juros" requerem um objeto .json no seu corpo (BODY). Modelo:**
 
