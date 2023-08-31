@@ -28,7 +28,7 @@ const jurosSimples = (req, res) => {
             taxa: `${taxa * 100}%`
         }
 
-        historico.push(novoHistorico);
+        historico.unshift(novoHistorico);
 
         return res.status(200).json({
             valorAcumulado: valorFinal.toFixed(2),
@@ -67,7 +67,7 @@ const jurosComposto = (req, res) => {
             taxa: `${taxa * 100}%`
         }
 
-        historico.push(novoHistorico);
+        historico.unshift(novoHistorico);
 
         return res.status(200).json({
             valorAcumulado: valorFinal.toFixed(2),
