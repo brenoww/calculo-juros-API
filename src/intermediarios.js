@@ -25,7 +25,7 @@ const verificarDados = (req, res, next) => {
     if (Number.isNaN(tempo) || !Number.isInteger(tempo)) {
         return res.status(400).json({ mensagem: "O tempo deve ser um numero válido (ex.: 10 )" })
     }
-    if (taxa < 1) {
+    if (tempo < 1) {
         return res.status(400).json({ mensagem: "O tempo deve ser maior que um!" })
     }
     next();
