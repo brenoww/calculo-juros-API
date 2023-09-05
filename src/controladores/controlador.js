@@ -25,7 +25,8 @@ const jurosSimples = (req, res) => {
             valorInicial: valorInicial.toFixed(2),
             valorAcumulado: valorFinal.toFixed(2),
             juros,
-            taxa: `${taxa * 100}%`
+            taxa: `${taxa * 100}%`,
+            tempo
         }
 
         historico.unshift(novoHistorico);
@@ -64,7 +65,8 @@ const jurosComposto = (req, res) => {
             valorInicial: valorInicial.toFixed(2),
             valorAcumulado: valorFinal.toFixed(2),
             juros,
-            taxa: `${taxa * 100}%`
+            taxa: `${taxa * 100}%`,
+            tempo
         }
 
         historico.unshift(novoHistorico);
