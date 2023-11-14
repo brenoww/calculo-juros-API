@@ -21,7 +21,7 @@ Esse projeto trata-se de uma ApiREST para cálculo de juros simples e compostos,
 ## Como instalar
 - Clone o repositório para qualquer pasta
 - Abra seu terminal na pasta do repositório e digite:
-```
+```cmd
 npm install
 ```
 
